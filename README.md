@@ -301,8 +301,16 @@ VigIA-MVP/
 │   └── sounds/
 │
 └── docs/
-    ├── arquitectura.png
-    └── maqueta.png
+     └── images/
+      ├── maqueta-general.jpg
+      ├── habitacion.jpg
+      ├── sala.jpg
+      ├── cocina.jpg
+      ├── identificando.jpg
+      ├── live-detection.jpg
+      └── arquitectura-sistema.png
+
+
 ```
 
 ---
