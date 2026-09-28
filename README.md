@@ -137,7 +137,135 @@ IDENTIFICANDO NIVEL DE RIESGO...
 ```
 
 ---
+# Demostración visual del sistema
 
+A continuación se presentan imágenes que ilustran el funcionamiento del prototipo durante la detección en tiempo real.
+
+---
+
+## Maqueta utilizada para las pruebas
+
+La maqueta representa un entorno doméstico simplificado compuesto por tres zonas:
+
+- Habitación
+- Sala
+- Cocina
+
+docs/images/maqueta-general.jpg
+
+---
+
+## Escenario 1: Riesgo Bajo (Habitación)
+
+El modelo identifica que el muñeco se encuentra en la habitación.
+
+**Resultado esperado:**
+
+```text
+Ubicación detectada:
+HABITACIÓN
+
+Nivel de riesgo:
+BAJO
+```
+
+docs/images/habitacion.jpg
+
+---
+
+## Escenario 2: Riesgo Medio (Sala)
+
+El modelo identifica que el muñeco se encuentra en la sala.
+
+**Resultado esperado:**
+
+```text
+Ubicación detectada:
+SALA
+
+Nivel de riesgo:
+MEDIO
+```
+
+docs/images/sala.jpg
+
+---
+
+## Escenario 3: Riesgo Alto (Cocina)
+
+El modelo identifica que el muñeco se encuentra en la cocina.
+
+**Resultado esperado:**
+
+```text
+Ubicación detectada:
+COCINA
+
+Nivel de riesgo:
+ALTO
+```
+
+docs/images/cocina.jpg
+
+---
+
+## Escenario 4: Identificación en proceso
+
+Cuando la confianza del modelo es insuficiente o la ubicación no puede determinarse claramente.
+
+**Resultado esperado:**
+
+```text
+Ubicación detectada:
+NO DETERMINADA
+
+Estado:
+IDENTIFICANDO NIVEL DE RIESGO...
+```
+
+docs/images/identificando.jpg
+
+---
+
+## Detección en tiempo real
+
+Captura de la interfaz ejecutándose en vivo desde la cámara del celular.
+
+docs/images/live-detection.jpg
+
+---
+
+## Flujo completo del sistema
+
+```text
+Cámara del celular
+          ↓
+Captura de video
+          ↓
+YOLO analiza la imagen
+          ↓
+Clasifica la habitación
+          ↓
+Determina el nivel de riesgo
+          ↓
+Genera la alerta correspondiente
+```
+
+docs/images/arquitectura-sistema.png
+
+---
+
+## Resultados esperados
+
+| Ubicación detectada | Nivel de riesgo |
+|--------------------|----------------|
+| Habitación | Bajo |
+| Sala | Medio |
+| Cocina | Alto |
+| No determinada | Identificando nivel de riesgo |
+
+
+---
 # Estructura del proyecto
 
 ```text
