@@ -1,0 +1,119 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# VS Code / IDEs
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+
+logs/
+*.log
+
+# =========================
+# Sistema Operativo
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# YOLO / Ultralytics
+# =========================
+
+runs/
+*.cache
+
+# Resultados de entrenamiento
+results.csv
+events.out.tfevents*
+
+# =========================
+# Modelos entrenados
+# =========================
+
+models/best.pt
+models/last.pt
+models/*.onnx
+models/*.engine
+models/*.tflite
+models/*.torchscript
+
+# =========================
+# Dataset temporal
+# =========================
+
+dataset/tmp/
+dataset/cache/
+
+# =========================
+# Archivos multimedia grandes
+# =========================
+
+*.mp4
+*.avi
+*.mov
+
+# Excepción para documentación
+!docs/**/*.mp4
+
+# =========================
+# Configuración local
+# =========================
+
+.env
+.env.local
+
+# =========================
+# Pytest
+# =========================
+
+.pytest_cache/
+
+# =========================
+# Coverage
+# =========================
+
+.coverage
+htmlcov/
+
+# =========================
+# Build
+# =========================
+
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Archivos temporales
+# =========================
+
+tmp/
+temp/
+*.tmp
